@@ -4,19 +4,20 @@
   <meta charset="UTF-8">
   <title>Jiwon Kim</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <style>
     body {
-      max-width: 820px;
+      max-width: 920px;
       margin: 60px auto;
       padding: 0 24px;
-      font-family: Georgia, serif;
-      line-height: 1.6;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.65;
       color: #222;
       background: #fff;
     }
 
     nav {
-      margin-bottom: 36px;
+      margin-bottom: 42px;
       font-family: Arial, sans-serif;
       font-size: 15px;
     }
@@ -31,25 +32,84 @@
       text-decoration: underline;
     }
 
+    .header {
+      display: flex;
+      gap: 34px;
+      align-items: flex-start;
+      margin-bottom: 34px;
+    }
+
+    .profile-photo {
+      width: 190px;
+      height: 235px;
+      object-fit: cover;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+    }
+
+    .intro {
+      flex: 1;
+    }
+
     h1 {
-      font-size: 38px;
-      margin-bottom: 4px;
+      font-size: 42px;
+      margin: 0 0 6px 0;
       line-height: 1.2;
     }
 
     h2 {
-      margin-top: 34px;
-      line-height: 1.2;
+      margin-top: 38px;
+      font-size: 24px;
+      line-height: 1.25;
+    }
+
+    h3 {
+      margin-top: 24px;
+      font-size: 19px;
     }
 
     .subtitle {
       font-family: Arial, sans-serif;
       color: #555;
-      margin-bottom: 32px;
+      margin-bottom: 28px;
     }
 
     a {
       color: #0645ad;
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .small {
+      font-size: 15px;
+      color: #555;
+      font-family: Arial, sans-serif;
+    }
+
+    @media (max-width: 700px) {
+      body {
+        margin: 34px auto;
+      }
+
+      .header {
+        flex-direction: column;
+      }
+
+      .profile-photo {
+        width: 170px;
+        height: 210px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin-bottom: 8px;
+      }
     }
   </style>
 </head>
@@ -64,41 +124,93 @@
     <a href="experiments.html">Experiments</a>
   </nav>
 
-  <h1>Jiwon Kim</h1>
+  <div class="header">
+    <img class="profile-photo" src="profile.jpg" alt="Portrait of Jiwon Kim">
 
-  <p class="subtitle">
-    Practical Philosophy | Metaethics | Philosophy of Language | Normative Ethics | Philosophy of AI
-  </p>
+    <div class="intro">
+      <h1>Jiwon Kim</h1>
 
-  <p>
-    I am a philosopher working in practical philosophy, with research interests in metaethics,
-    philosophy of language, normative ethics, and philosophy of AI.
-  </p>
+      <p class="subtitle">
+        Practical Philosophy | Metaethics | Philosophy of Language | Normative Ethics | Philosophy of AI
+      </p>
 
-  <p>
-    My work examines moral advice, normative address, standing, uptake, and responsibility in communication.
-    I am especially interested in how speakers and hearers navigate norms governing who may advise,
-    criticise, demand, forgive, blame, or otherwise address others normatively.
-  </p>
+      <p>
+        I am a philosopher working in practical philosophy, with research interests in metaethics,
+        philosophy of language, normative ethics, and philosophy of artificial intelligence.
+        I received my PhD in Practical Philosophy from Lund University in 2025. My dissertation,
+        <em>How to Guide with Words: Moral Advice as a Speech Act</em>, examines moral advice as
+        a distinctive form of normative communication.
+      </p>
+    </div>
+  </div>
 
   <h2>Research</h2>
 
   <p>
-    My current research focuses on standing in normative address, including cases in which speakers or hearers
-    misattribute who has the standing to make certain normative claims. I also work on questions about
-    artificial intelligence, communication, and responsibility.
+    My research asks how words guide action, how normative address succeeds or fails, and how
+    speakers and hearers negotiate the standing to advise, criticise, demand, forgive, blame,
+    or otherwise address one another normatively.
   </p>
-
-  <h2>Publications</h2>
 
   <p>
-    Publications and work in progress will be added here.
+    I am especially interested in cases where standing is misattributed: cases in which speakers
+    take themselves to have standing they lack, hearers confer standing where it is not warranted,
+    or both parties treat a normative address as authorised when it is not. This work connects
+    metaethics, speech act theory, feminist philosophy of language, social epistemology, and
+    debates about moral responsibility.
   </p>
+
+  <h2>Selected publications</h2>
+
+  <ul>
+    <li>
+      “Aggregation, Trade-offs, and Uncertainties in AI Wellbeing.”
+      <em>Asian Journal of Philosophy</em> 4, 93 (2025).
+      <a href="https://doi.org/10.1007/s44204-025-00318-3">https://doi.org/10.1007/s44204-025-00318-3</a>
+    </li>
+
+    <li>
+      Review of William MacAskill, Krister Bykvist, and Toby Ord,
+      <em>Moral Uncertainty</em>. <em>Ethical Theory and Moral Practice</em>.
+      <a href="https://doi.org/10.1007/s10677-021-10216-1">https://doi.org/10.1007/s10677-021-10216-1</a>
+    </li>
+  </ul>
+
+  <h2>Work in progress</h2>
+
+  <ul>
+    <li>“Mood, Force, and Priming in Explicit Performatives.”</li>
+    <li>“Hare and the Problem of Multilateral Preference Aggregation.”</li>
+  </ul>
+
+  <h2>Teaching</h2>
+
+  <p>
+    I have taught and co-taught undergraduate and master’s-level courses at Lund University,
+    including <em>One World One Morality</em>, <em>Contractualism</em>,
+    <em>Fitting Attitudes and Value</em>, and a master’s seminar in Conservation Biology on
+    the intrinsic value of biodiversity. I have also tutored final-year philosophy students on
+    thesis writing.
+  </p>
+
+  <h2>Selected academic activities</h2>
+
+  <ul>
+    <li>Recipient of the King Oscar II Scholarship, Lund University, 2026.</li>
+    <li>Research Associate, African Centre for Epistemology and Philosophy of Science, University of Johannesburg, 2025–2028.</li>
+    <li>Research visits at the Australian National University and the University of Johannesburg.</li>
+    <li>Referee for <em>Asian Journal of Philosophy</em> and <em>Language and Communication</em>.</li>
+    <li>Co-organiser of early-career philosophy conferences and workshops at Lund University.</li>
+  </ul>
 
   <h2>Contact</h2>
 
   <p>
-    Email: jiwon[dot]kim[at]fil.lu.se
+    Email: jiwon[dot]kim[at]fil.lu.se</a>
+  </p>
+
+  <p class="small">
+    This website is under construction.
   </p>
 </body>
 </html>
